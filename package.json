@@ -1,17 +1,20 @@
 {
   "name": "laravel-log-watcher",
-  "displayName": "laravel-log-watcher",
+  "displayName": "Laravel Log Watcher",
   "description": "Watches Laravel logs and notifies on changes",
   "version": "0.0.1",
   "publisher": "azmolla",
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.85.0"
   },
+  "icon": "images/icon.png",
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages"
   ],
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+    "onCommand:laravelLogWatcher.toggle"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -21,17 +24,17 @@
         "laravelLogWatcher.logFilePath": {
           "type": "string",
           "default": "storage/logs/laravel.log",
-          "description": "Path to the Laravel log file (relative or absolute)"
+          "description": "Path to the Laravel log file (relative to workspace root or absolute)"
         },
         "laravelLogWatcher.notificationMessage": {
           "type": "string",
           "default": "Laravel log updated!",
-          "description": "Notification message when the log file changes"
+          "description": "Notification message to show when the log file changes"
         },
         "laravelLogWatcher.enabled": {
           "type": "boolean",
           "default": true,
-          "description": "Enable or disable Laravel log watcher"
+          "description": "Enable or disable the Laravel log watcher"
         }
       }
     },
@@ -45,19 +48,19 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "watch": "tsc -w -p ./",
+    "lint": "eslint src --ext .ts",
     "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.102.0",
+    "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
+    "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
+    "eslint": "^9.0.0",
+    "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2"
   }
