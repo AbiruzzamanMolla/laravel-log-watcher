@@ -4,13 +4,27 @@
   "description": "Watches Laravel logs and notifies on changes",
   "version": "0.0.1",
   "publisher": "azmolla",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbiruzzamanMolla/laravel-log-watcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AbiruzzamanMolla/laravel-log-watcher/issues"
+  },
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=azmolla.laravel-log-watcher",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "icon": "images/icon.png",
+  "icon": "icon.png",
   "categories": [
     "Other",
     "Programming Languages"
+  ],
+  "keywords": [
+    "laravel",
+    "log",
+    "log-alert",
+    "php"
   ],
   "activationEvents": [
     "onStartupFinished",
@@ -28,7 +42,7 @@
         },
         "laravelLogWatcher.notificationMessage": {
           "type": "string",
-          "default": "Laravel log updated!",
+          "default": "New log added in laravel log file!",
           "description": "Notification message to show when the log file changes"
         },
         "laravelLogWatcher.enabled": {
