@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
   let logPath = resolvePath(config.get<string>("logFilePath", ""));
   let message = config.get<string>(
     "notificationMessage",
-    "Laravel log updated!"
+    "New laravel log fired!"
   );
 
   const toggleCmd = vscode.commands.registerCommand(

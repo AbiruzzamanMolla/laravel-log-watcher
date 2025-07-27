@@ -1,12 +1,9 @@
-# Laravel Log Watcher
+# [Laravel Log Watcher](https://marketplace.visualstudio.com/items?itemName=azmolla.laravel-log-watcher)
 
 > VS Code extension that watches your Laravel log file and notifies you when it changes.  
 Perfect for debugging without constantly reopening the log file.
 
 ---
-
-![Laravel Log Watcher Banner](https://raw.githubusercontent.com/azmolla/laravel-log-watcher/main/images/banner.png)
-[VSCE](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 
 ## 🚀 Features
 

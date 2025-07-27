@@ -2,7 +2,7 @@
   "name": "laravel-log-watcher",
   "displayName": "Laravel Log Watcher",
   "description": "Watches Laravel logs and notifies on changes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "azmolla",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
         },
         "laravelLogWatcher.notificationMessage": {
           "type": "string",
-          "default": "New log added in laravel log file!",
+          "default": "New log fired in laravel log file!",
           "description": "Notification message to show when the log file changes"
         },
         "laravelLogWatcher.enabled": {
