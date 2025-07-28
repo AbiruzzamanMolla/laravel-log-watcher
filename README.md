@@ -80,9 +80,9 @@ This extension will notify you instantly when that happens. Debug smarter ⚡
 
 ## 🧪 Coming Soon
 
-* Status bar toggle
+* Status bar toggle `done`
 * Real-time log viewer
-* Severity-based log parsing
+* Severity-based log parsing `done`
 * Workspace-level enable/disable
 
 ---

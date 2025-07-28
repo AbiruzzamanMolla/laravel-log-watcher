@@ -2,7 +2,7 @@
   "name": "laravel-log-watcher",
   "displayName": "Laravel Log Watcher",
   "description": "Watches Laravel logs and notifies on changes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "azmolla",
   "repository": {
     "type": "git",
